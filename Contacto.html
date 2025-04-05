@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function confirmar(){
+    var respuesta = Confirm("¿Desea Enviar esta Informacion?");
+    if(respuesta == true){
+    return true;
+    }    else {
+            return false;
+        }
+    }
+</script>
+
+
+<body class="Contactos">
+   
+    <form>
+        <h1>Contactanos</h1>
+        <p class="Tex6">Envianos tu opinion si la informacion de la pagina fue util o falta agregar cosas y mas detalles</p>
+<div class="Imput-Formu">
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" id="email" >
+    </div>
+
+        <br>
+
+<div class="Imput-Formu">
+        <label for="Fecha Nacimiento">Fecha Nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+    </div>
+
+        <br>
+
+<div class="Imput-Formu">
+        <label for="opnion">Opinion</label>
+        <br>
+        <textarea name="opinion" id="opinion" cols="60" rows="17" placeholder="Tu Opnion"></textarea>
+    </div>
+
+        <input class="btn" type="submit" name="Enviar" value="Enviar" onclick="return confirmar()">
+        <ul>
+            <a class="Volverinicio" href="../index.html">Volver al Inicio</a>
+        </ul>
+    </form>
+
+    <script>
+        function confirmar(){
+        var respuesta=confirm("¿Desea Enviar esta Informacion?");
+        if(respuesta==true){
+        return true;
+        }    else {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
